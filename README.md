@@ -13,7 +13,7 @@ Este proyecto es mi primera Landing Page (Portafolio Personal) desarrollada para
 [x] Repositorio en GitHub creado.
 [x] Proyecto subido al repositorio.
 [x] Proyecto publicado utilizando Vercel.
-[x] En el "README.md" se indica la URL:
+[x] En el "README.md" se indica la URL: https://pablo-pfo-1-front.vercel.app/
 
 * Uso de Google Fonts:
 [x] Enlace a Google Fonts incluido en la sección "head" del HTML.
