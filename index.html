@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Frontend - Pablo</title>
+    <!-- Importo la tipografía orbitron de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Menú principal de mi portafolio. Más adelante, cuando aprenda más de CSS, quiero dejar esta barra pegada arriba del todo para que baje conmigo al hacer scroll. -->
+    <header>
+        <h1><span class="acento">&lt;</span> PABLO DEV <span class="acento">/&gt;</span></h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#tarjetas">Proyectos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre-mi">
+            <h2>&lt; Sobre Mí /&gt;</h2>
+            <img src="img/avatar.jpg" alt="Avatar representativo de Pablo" class="foto-perfil">
+            <p>Hola a todos! Mi nombre es Pablo, tengo 32 años y soy de Baradero, provincia de Buenos Aires. Trabajo como Coordinador de Sistemas en una industria alimenticia.</p>
+            <br>
+            <p>Estudié Analista de Sistemas hace más de 10 años, a partir de ahí, todo lo que aprendí fue de manera autodidacta. Actualmente, formo parte de un equipo de sistemas donde mantengo un ERP empresarial desarrollado en Visual Fox Pro. Mi rol está orientado a la atención de usuarios, resolver errores y desarrollar nuevas funcionalidades. </p>
+            <br>
+            <p>Mi objetivo en esta carrera es estructurar mis conocimientos, modernizarme y entrar de lleno en el desarrollo web actual.</p>
+        </section>
+
+        <!-- Acá agrupo mis proyectos usando Flexbox para que se acomoden solos según la pantalla. Mi idea a futuro es que al hacer clic en la foto se abra una ventana tipo modal con más detalles. -->
+        <section id="tarjetas">
+            <h2>&lt; Mis proyectos /&gt;</h2>
+            <div class="contenedor-flex">
+                <article class="tarjeta">
+                    <img src="img/foxpro.jpg" alt="Captura ilustrativa de un sistema ERP">
+                    <h3>Optimización y Desarrollo ERP (VFP):</h3>
+                    <p>Implementación de módulos críticos como planificación de producción (MRP) basada en stock dinámico y algoritmos de promedio de ventas, liquidación de sueldos, etc.</p>
+                </article>
+                <article class="tarjeta">
+                    <img src="img/figmacsharp.jpg" alt="Captura del prototipo del club deportivo">
+                    <h3>Sistema Club Deportivo y Clínica Seprice</h3>
+                    <p>Proyectos de la carrera actual. Prototipado completo en Figma y desarrollo lógico en C#. Excelente para asentar mis bases autodidactas.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Lista de mis tecnologías agrupadas por categoría funcional. A futuro me gustaría agregarle barras de progreso o iconos a cada una. -->
+        <section id="habilidades">
+            <h2>&lt; Stack Tecnológico /&gt;</h2>
+            <div class="habilidades-lista">
+                <ul>
+                    <li><strong>Desktop & Legacy:</strong> Visual FoxPro (VFP)</li>
+                    <li><strong>Backend & Scripting:</strong> C#, Python</li>
+                    <li><strong>Bases de Datos:</strong> SQL Server, MySQL</li>
+                    <li><strong>Frontend & Web:</strong> React.js, JavaScript, HTML5, CSS3</li>
+                    <li><strong>Diseño & Prototipado:</strong> Figma</li>
+                    <li><strong>Herramientas & Entornos:</strong> Git/GitHub, Visual Studio/VS Code</li>
+                    <li><strong>Soluciones Agiles:</strong> AppSheet & Google Apps Script (Automatizaciones)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="peliculas">
+            <h2>&lt; Películas Clásicas /&gt;</h2>
+            <div class="contenedor-flex">
+                <article class="tarjeta">
+                    <h3>Titanic</h3>
+                    <img src="img/titanic.jpg" alt="Póster de la película Titanic">
+                    <p>Un clásico indiscutible del cine que no pasa de moda por el año en que se lanzó.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Avatar</h3>
+                    <img src="img/avatar-peli.jpg" alt="Póster de la película Avatar">
+                    <p>Un referente en el uso de CGI y renderizado distribuido que marcó un antes y un después en la industria.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Shrek</h3>
+                    <img src="img/shrek.jpg" alt="Póster de la película Shrek">
+                    <p>Un hito en la animación digital y el procesamiento de assets 3D para finales de los 90, mucho humor y un mensaje genial.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Formulario para que me contacten. Como todavía es solo Frontend no manda correos de verdad, pero cuando lleguemos a backend lo voy a conectar a una base de datos. -->
+        <section id="contacto">
+            <h2>&lt; Conectar /&gt;</h2>
+            <form action="#" method="POST" class="formulario">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <button type="submit" class="btn-enviar">ENVIAR MENSAJE</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desarrollado por Pablo - 2026</p>
+        <a href="https://INSTAGRAM.com/" target="_blank">@Instagram</a>
+        <br>
+        <a href="https://github.com/" target="_blank">Acceder a mi GitHub</a>
+    </footer>
+
+</body>
+</html>
